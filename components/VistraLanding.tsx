@@ -43,116 +43,108 @@ export const VistraLanding: React.FC = () => {
 
         {/* SECTION 1: HEADLINE */}
         <section className="space-y-6 text-left sm:text-center">
+            {/* Tagline/Hook */}
           <div className="inline-block rounded-full border border-vistra-neon/30 bg-vistra-neon/10 px-3 py-1 mb-4">
-            <span className="text-xs font-bold tracking-widest text-vistra-neon uppercase">NOVO</span>
+            <span className="text-xs font-bold tracking-widest text-vistra-neon uppercase">PROTOCOLO DE 3 SEGUNDOS</span>
           </div>
-          <h1 className="font-sans text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight text-vistra-white mb-4">
-            Transforme Estoque Parado em <br className="hidden sm:block" />
-            <span className="text-vistra-neon">Caixa Imediato.</span>
+          
+          <h1 className="font-sans text-3xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight text-vistra-white mb-4">
+            O Protocolo de 3 Segundos que Liquida Estoque Encalhado de <span className="text-vistra-neon">R$ 50k+</span> Sem Gastar com Anúncios.
           </h1>
         </section>
 
         {/* SECTION 2: SUBHEADLINE */}
         <section className="relative border-l-2 border-vistra-neon/50 bg-vistra-gray/20 p-6 pl-6 sm:border-l-0 sm:border-t-2 sm:bg-transparent sm:p-0 sm:pt-8 min-h-[100px]">
           <p className="font-sans text-lg leading-relaxed text-gray-300 sm:text-xl sm:text-center max-w-3xl mx-auto">
-            O Sistema de Engenharia de Receita com IA que liquida produtos encalhados sem equipe de vendas extra e sem gastar com anúncios desnecessários.
+            Utilizamos uma IA de Engenharia de Receita para reativar leads mortos no seu CRM e gerar agendamentos automáticos. <strong>Não é agência, não é software: é infraestrutura de liquidação.</strong>
           </p>
         </section>
 
-        {/* SECTION 3: PAIN POINTS (COMPARISON CARDS) */}
-        <section className="grid gap-6 sm:grid-cols-2">
+        {/* SECTION 3: SOCIAL PROOF (UNIFIED CARDS) */}
+        <section className="grid gap-6 sm:grid-cols-3">
+             {/* Card 1 */}
+            <div className="flex flex-col items-center justify-center p-6 rounded-xl border border-vistra-neon/20 bg-vistra-neon/5 backdrop-blur-sm text-center transform transition-all duration-300 hover:scale-105 hover:border-vistra-neon/50">
+                <span className="text-4xl font-bold text-white mb-2">R$ 12M+</span>
+                <span className="text-xs font-mono text-vistra-textGray uppercase tracking-widest">Recuperados (Histórico)</span>
+            </div>
+            {/* Card 2 */}
+            <div className="flex flex-col items-center justify-center p-6 rounded-xl border border-vistra-neon/20 bg-vistra-neon/5 backdrop-blur-sm text-center transform transition-all duration-300 hover:scale-105 hover:border-vistra-neon/50">
+                <span className="text-4xl font-bold text-white mb-2">3 Seg</span>
+                <span className="text-xs font-mono text-vistra-textGray uppercase tracking-widest">Tempo Médio de Resposta</span>
+            </div>
+             {/* Card 3 */}
+             <div className="flex flex-col items-center justify-center p-6 rounded-xl border border-vistra-neon/20 bg-vistra-neon/5 backdrop-blur-sm text-center transform transition-all duration-300 hover:scale-105 hover:border-vistra-neon/50">
+                <span className="text-4xl font-bold text-white mb-2">24/7</span>
+                <span className="text-xs font-mono text-vistra-textGray uppercase tracking-widest">Operação da IA</span>
+            </div>
+        </section>
 
-          {/* CARD: MANUAL (PROBLEM) */}
-          <div className="flex flex-col gap-6 rounded-2xl border border-white/5 bg-white/5 p-6 sm:p-8 relative overflow-hidden group hover:border-red-500/30 transition-colors duration-500">
-            <div className="flex items-center gap-3 border-b border-white/10 pb-4">
-              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-red-500/10 text-red-500">
+
+        {/* SECTION 4: COMPARISON (DOR VS PRAZER - HIGH CONTRAST) */}
+        <section className="grid gap-6 sm:grid-cols-2 pt-8">
+
+          {/* CARD: MANUAL (DOR/PAIN) - Black & White / Red Tint */}
+          <div className="flex flex-col gap-6 rounded-2xl border border-white/10 bg-zinc-950 p-6 sm:p-8 relative overflow-hidden grayscale hover:grayscale-0 hover:border-red-500/50 transition-all duration-500 group">
+             {/* Glitch overlay maybe? Keeping it simple but dark */}
+            <div className="absolute inset-0 bg-red-900/5 pointer-events-none group-hover:bg-red-900/10 transition-colors"></div>
+
+            <div className="flex items-center gap-3 border-b border-white/10 pb-4 z-10">
+              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-zinc-800 text-zinc-400 group-hover:bg-red-500/10 group-hover:text-red-500 transition-colors">
                 <AlertTriangle size={20} />
               </div>
-              <h3 className="font-mono text-lg font-bold text-gray-200">
-                PROCESSO MANUAL <br />
-                <span className="text-sm text-red-400 font-normal">(LENTO)</span>
+              <h3 className="font-mono text-lg font-bold text-zinc-400 group-hover:text-white transition-colors">
+                MODO MANUAL <br />
+                <span className="text-sm text-zinc-600 font-normal group-hover:text-red-400">(LENTO & CARO)</span>
               </h3>
             </div>
 
-            <ul className="space-y-4">
-              <PainPointItem text="Sem a Vistra.IA: Leads esperam horas por resposta" />
-              <PainPointItem text="Sem a Vistra.IA: Vendedores desistem no 1º 'não'" />
-              <PainPointItem text="Sem a Vistra.IA: Follow-up desorganizado" />
-              <PainPointItem text="Sem a Vistra.IA: Atendimento limitado ao horário comercial" />
+            <ul className="space-y-4 z-10 opacity-70 group-hover:opacity-100 transition-opacity">
+              <PainPointItem text="Horas/Dias para responder 1 lead" />
+              <PainPointItem text="Vendedores desistem após 1 tentativa" />
+              <PainPointItem text="Follow-up inexistente ou manual" />
+              <PainPointItem text="Limitado ao horário comercial (8h-18h)" />
             </ul>
           </div>
 
-          {/* CARD: VISTRA (SOLUTION) */}
-          <div className="flex flex-col gap-6 rounded-2xl border border-vistra-neon/30 bg-vistra-neon/5 p-6 sm:p-8 relative overflow-hidden shadow-[0_0_40px_-10px_rgba(37,211,102,0.1)]">
+          {/* CARD: VISTRA (PRAZER/GAIN) - Neon/Vibrant */}
+          <div className="flex flex-col gap-6 rounded-2xl border-2 border-vistra-neon bg-vistra-neon/5 p-6 sm:p-8 relative overflow-hidden shadow-[0_0_50px_-10px_rgba(37,211,102,0.15)]">
             {/* Highlight effect */}
-            <div className="absolute top-0 right-0 h-24 w-24 bg-vistra-neon/10 blur-3xl rounded-full -mr-10 -mt-10 pointer-events-none"></div>
+            <div className="absolute top-0 right-0 h-32 w-32 bg-vistra-neon/20 blur-[60px] rounded-full -mr-10 -mt-10 pointer-events-none"></div>
 
             <div className="flex items-center gap-3 border-b border-vistra-neon/20 pb-4">
-              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-vistra-neon/10 text-vistra-neon">
-                <CheckCircle2 size={20} />
+              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-vistra-neon text-black font-bold">
+                <Zap size={20} />
               </div>
               <h3 className="font-mono text-lg font-bold text-white">
-                COM VISTRA.IA <br />
-                <span className="text-sm text-vistra-neon font-normal">(INSTANTÂNEO)</span>
+                VISTRA.IA <br />
+                <span className="text-sm text-vistra-neon font-normal">(AUTOMÁTICO & LUCRO)</span>
               </h3>
             </div>
 
             <ul className="space-y-4">
-              <SolutionItem text="Atendimento em 3 segundos (24h por dia)" />
-              <SolutionItem text="Follow-up infinito até a conversão" />
-              <SolutionItem text="Qualificação automática de leads" />
-              <SolutionItem text="Agendamento direto no calendário" />
+              <SolutionItem text="Atendimento imediato em 3 segundos" />
+              <SolutionItem text="Persistência infinita até agendar" />
+              <SolutionItem text="Qualificação e triagem automática" />
+              <SolutionItem text="Vendas ocorrendo 24h/7d (mesmo feriados)" />
             </ul>
-          </div>
-        </section>
-
-        {/* SECTION 4: AUTHORITY / POSITIONING (Existing, slight tweak potentially, but keeping as is per request logic to focus on changes) */}
-        {/* We keep the infrastructure section but maybe move it down or keep it as credibility anchor */}
-        <section className="flex flex-col items-start gap-6 border border-vistra-gray bg-zinc-900/30 p-8 sm:items-center sm:text-center rounded-xl">
-          <Cpu className="h-10 w-10 text-vistra-neon mb-2" />
-          <div className="space-y-2">
-            <h2 className="font-sans text-2xl font-bold text-white">
-              Não somos agência. Não vendemos software.
-            </h2>
-            <p className="font-mono text-sm text-vistra-neon">
-                    // CONSTRUÍMOS INFRAESTRUTURA DE RECEITA
-            </p>
-          </div>
-        </section>
-
-        {/* SECTION 4.5: BIG NUMBERS AUTHORITY */}
-        <section className="flex flex-wrap justify-center gap-4 sm:gap-12 py-8 border-y border-white/5 bg-white/5 backdrop-blur-sm">
-          <div className="text-center">
-            <p className="text-3xl sm:text-4xl font-bold text-white">R$ 1.2M+</p>
-            <p className="text-xs sm:text-sm font-mono text-vistra-textGray uppercase tracking-widest mt-1">Recuperados em 2025</p>
-          </div>
-          <div className="hidden sm:block w-px bg-white/10 h-16 self-center"></div>
-          <div className="text-center">
-            <p className="text-3xl sm:text-4xl font-bold text-white">14+</p>
-            <p className="text-xs sm:text-sm font-mono text-vistra-textGray uppercase tracking-widest mt-1">Indústrias Atendidas</p>
-          </div>
-          <div className="hidden sm:block w-px bg-white/10 h-16 self-center"></div>
-          <div className="text-center">
-            <p className="text-3xl sm:text-4xl font-bold text-white">24/7</p>
-            <p className="text-xs sm:text-sm font-mono text-vistra-textGray uppercase tracking-widest mt-1">Operação Non-Stop</p>
           </div>
         </section>
 
         {/* SECTION 5: CTA */}
-        <section className="flex flex-col items-center gap-8 pt-8">
-
-          {/* Scarcity Pill */}
-          <div className="inline-flex items-center gap-2 rounded-full border border-red-500/30 bg-red-500/10 px-4 py-1.5 backdrop-blur-md">
-            <div className="h-2 w-2 rounded-full bg-red-500 animate-pulse"></div>
-            <span className="text-xs font-bold text-red-400 uppercase tracking-wider">Capacidade operacional: Apenas 4 novos parceiros aceitos este mês</span>
-          </div>
+        <section className="flex flex-col items-center gap-8 pt-8 pb-12">
+          
+           {/* Credibility / Authority text moved here slightly modified if needed, or keep standard */}
+           <div className="text-center space-y-2">
+                <h2 className="text-2xl font-bold text-white">Pare de perder dinheiro com estoque parado.</h2>
+                <p className="text-zinc-400">Sua agenda lotada de clientes qualificados, sem esforço manual.</p>
+           </div>
 
           <button
             onClick={handleCtaClick}
             className="group relative flex w-full max-w-md items-center justify-center gap-3 bg-[#25D366] px-8 py-6 text-lg font-bold uppercase tracking-wide text-black transition-all duration-200 hover:bg-white hover:scale-[1.02] hover:shadow-[0_0_30px_rgba(37,211,102,0.6)] sm:text-xl rounded-lg"
           >
             <WhatsAppIcon className="h-6 w-6 transition-transform duration-300 group-hover:scale-110" />
-            <span>Quero Destravar Meu Estoque Agora</span>
+            <span>Agendar Diagnóstico Gratuito</span>
 
             {/* Blinking overlay effect */}
             <div className="absolute inset-0 bg-white/20 opacity-0 transition-opacity duration-100 group-hover:opacity-100 rounded-lg"></div>
@@ -160,49 +152,15 @@ export const VistraLanding: React.FC = () => {
 
           <div className="flex flex-col items-center gap-1 text-center">
             <span className="text-xs text-zinc-500 font-mono border-b border-zinc-800 pb-0.5">
-              Análise gratuita de viabilidade para empresas com estoque acima de <span className="text-yellow-500 font-bold">R$ 50k</span>
+              Ideal para estoques acima de <span className="text-yellow-500 font-bold">R$ 50k</span>
             </span>
           </div>
-
-          {/* Authority Banner - Social Proof */}
-          <div className="w-full max-w-3xl mt-8 pt-8 border-t border-white/10">
-            <div className="flex flex-wrap justify-center items-center gap-6 sm:gap-12 text-center">
-              <div className="flex items-center gap-2">
-                <CheckCircle2 size={16} className="text-vistra-neon shrink-0" />
-                <span className="text-sm sm:text-base font-mono text-gray-400">
-                  <strong className="text-white font-bold">+R$ 12M</strong> Recuperados
-                </span>
-              </div>
-              <div className="hidden sm:block w-px h-6 bg-white/10"></div>
-              <div className="flex items-center gap-2">
-                <CheckCircle2 size={16} className="text-vistra-neon shrink-0" />
-                <span className="text-sm sm:text-base font-mono text-gray-400">
-                  <strong className="text-white font-bold">45+</strong> Varejistas Ativos
-                </span>
-              </div>
-              <div className="hidden sm:block w-px h-6 bg-white/10"></div>
-              <div className="flex items-center gap-2">
-                <CheckCircle2 size={16} className="text-vistra-neon shrink-0" />
-                <span className="text-sm sm:text-base font-mono text-gray-400">
-                  Sistema <strong className="text-white font-bold">Proprietário</strong>
-                </span>
-              </div>
-            </div>
-          </div>
         </section>
-
-        {/* Implementation Highlight */}
-        <div className="w-full flex justify-center py-8">
-          <div className="flex items-center gap-3 rounded-full border border-vistra-gray bg-zinc-950 px-6 py-3 text-xs sm:text-sm text-zinc-400">
-            <Zap size={16} className="text-yellow-500" />
-            <span><strong className="text-white">Implementação Relâmpago:</strong> Conectamos ao seu WhatsApp e CRM em menos de 48h.</span>
-          </div>
-        </div>
 
         {/* FOOTER */}
         <footer className="pt-10 text-center border-t border-vistra-gray/30 w-full">
           <p className="font-mono text-[10px] text-zinc-600">
-            VISTRA.IA © {new Date().getFullYear()} — REVENUE ENGINEERING SYSTEMS
+            VISTRA.IA © {new Date().getFullYear()} — INFRAESTRUTURA DE RECEITA
           </p>
         </footer>
 
