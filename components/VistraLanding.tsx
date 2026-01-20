@@ -159,7 +159,35 @@ export const VistraLanding: React.FC = () => {
           </button>
 
           <div className="flex flex-col items-center gap-1 text-center">
-            <span className="text-xs text-zinc-500 font-mono border-b border-zinc-800 pb-0.5">Análise gratuita de viabilidade para empresas com estoque acima de R$ 50k</span>
+            <span className="text-xs text-zinc-500 font-mono border-b border-zinc-800 pb-0.5">
+              Análise gratuita de viabilidade para empresas com estoque acima de <span className="text-yellow-500 font-bold">R$ 50k</span>
+            </span>
+          </div>
+
+          {/* Authority Banner - Social Proof */}
+          <div className="w-full max-w-3xl mt-8 pt-8 border-t border-white/10">
+            <div className="flex flex-wrap justify-center items-center gap-6 sm:gap-12 text-center">
+              <div className="flex items-center gap-2">
+                <CheckCircle2 size={16} className="text-vistra-neon shrink-0" />
+                <span className="text-sm sm:text-base font-mono text-gray-400">
+                  <strong className="text-white font-bold">+R$ 12M</strong> Recuperados
+                </span>
+              </div>
+              <div className="hidden sm:block w-px h-6 bg-white/10"></div>
+              <div className="flex items-center gap-2">
+                <CheckCircle2 size={16} className="text-vistra-neon shrink-0" />
+                <span className="text-sm sm:text-base font-mono text-gray-400">
+                  <strong className="text-white font-bold">45+</strong> Varejistas Ativos
+                </span>
+              </div>
+              <div className="hidden sm:block w-px h-6 bg-white/10"></div>
+              <div className="flex items-center gap-2">
+                <CheckCircle2 size={16} className="text-vistra-neon shrink-0" />
+                <span className="text-sm sm:text-base font-mono text-gray-400">
+                  Sistema <strong className="text-white font-bold">Proprietário</strong>
+                </span>
+              </div>
+            </div>
           </div>
         </section>
 
