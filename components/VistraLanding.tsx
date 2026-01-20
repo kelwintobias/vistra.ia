@@ -42,20 +42,21 @@ export const VistraLanding: React.FC = () => {
         </header>
 
         {/* SECTION 1: HEADLINE */}
+        {/* SECTION 1: HEADLINE */}
         <section className="space-y-6 text-left sm:text-center">
           <div className="inline-block rounded-full border border-vistra-neon/30 bg-vistra-neon/10 px-3 py-1 mb-4">
             <span className="text-xs font-bold tracking-widest text-vistra-neon uppercase">NOVO</span>
           </div>
           <h1 className="font-sans text-4xl font-bold leading-[1.1] tracking-tighter text-vistra-white sm:text-6xl lg:text-7xl">
-            Instale um SDR de Inteligência Artificial no seu WhatsApp e <br className="hidden sm:block" />
-            <span className="text-vistra-neon">atenda cada lead em 3 segundos, 24/7.</span>
+            Seu Estoque Parado Vale Dinheiro: <br className="hidden sm:block" />
+            <span className="text-vistra-neon">O Sistema de Engenharia de Receita que Transforma Produtos Encalhados em Caixa Imediato.</span>
           </h1>
         </section>
 
         {/* SECTION 2: SUBHEADLINE */}
         <section className="relative border-l-2 border-vistra-neon/50 bg-vistra-gray/20 p-6 pl-6 sm:border-l-0 sm:border-t-2 sm:bg-transparent sm:p-0 sm:pt-8 min-h-[100px]">
           <p className="font-sans text-lg leading-relaxed text-gray-300 sm:text-xl sm:text-center max-w-3xl mx-auto">
-            Pare de deixar leads esfriarem. A Vistra qualifica, nutre e agenda reuniões automaticamente enquanto sua equipe dorme.
+            Sem equipe de vendas extra. Sem gastar com ads desnecessários. Apenas IA trabalhando seus leads antigos.
           </p>
         </section>
 
