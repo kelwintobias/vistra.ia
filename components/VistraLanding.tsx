@@ -42,7 +42,6 @@ export const VistraLanding: React.FC = () => {
         </header>
 
         {/* SECTION 1: HEADLINE */}
-        {/* SECTION 1: HEADLINE */}
         <section className="space-y-6 text-left sm:text-center">
           <div className="inline-block rounded-full border border-vistra-neon/30 bg-vistra-neon/10 px-3 py-1 mb-4">
             <span className="text-xs font-bold tracking-widest text-vistra-neon uppercase">NOVO</span>
@@ -121,28 +120,46 @@ export const VistraLanding: React.FC = () => {
           </div>
         </section>
 
+        {/* SECTION 4.5: BIG NUMBERS AUTHORITY */}
+        <section className="flex flex-wrap justify-center gap-4 sm:gap-12 py-8 border-y border-white/5 bg-white/5 backdrop-blur-sm">
+          <div className="text-center">
+            <p className="text-3xl sm:text-4xl font-bold text-white">R$ 1.2M+</p>
+            <p className="text-xs sm:text-sm font-mono text-vistra-textGray uppercase tracking-widest mt-1">Recuperados em 2025</p>
+          </div>
+          <div className="hidden sm:block w-px bg-white/10 h-16 self-center"></div>
+          <div className="text-center">
+            <p className="text-3xl sm:text-4xl font-bold text-white">14+</p>
+            <p className="text-xs sm:text-sm font-mono text-vistra-textGray uppercase tracking-widest mt-1">Indústrias Atendidas</p>
+          </div>
+          <div className="hidden sm:block w-px bg-white/10 h-16 self-center"></div>
+          <div className="text-center">
+            <p className="text-3xl sm:text-4xl font-bold text-white">24/7</p>
+            <p className="text-xs sm:text-sm font-mono text-vistra-textGray uppercase tracking-widest mt-1">Operação Non-Stop</p>
+          </div>
+        </section>
+
         {/* SECTION 5: CTA */}
         <section className="flex flex-col items-center gap-8 pt-8">
+
+          {/* Scarcity Pill */}
+          <div className="inline-flex items-center gap-2 rounded-full border border-red-500/30 bg-red-500/10 px-4 py-1.5 backdrop-blur-md">
+            <div className="h-2 w-2 rounded-full bg-red-500 animate-pulse"></div>
+            <span className="text-xs font-bold text-red-400 uppercase tracking-wider">Capacidade operacional: Apenas 4 novos parceiros aceitos este mês</span>
+          </div>
+
           <button
             onClick={handleCtaClick}
             className="group relative flex w-full max-w-md items-center justify-center gap-3 bg-[#25D366] px-8 py-6 text-lg font-bold uppercase tracking-wide text-black transition-all duration-200 hover:bg-white hover:scale-[1.02] hover:shadow-[0_0_30px_rgba(37,211,102,0.6)] sm:text-xl rounded-lg"
           >
             <WhatsAppIcon className="h-6 w-6 transition-transform duration-300 group-hover:scale-110" />
-            <span>Ver a IA Negociando ao Vivo</span>
+            <span>Quero Destravar Meu Estoque Agora</span>
 
             {/* Blinking overlay effect */}
             <div className="absolute inset-0 bg-white/20 opacity-0 transition-opacity duration-100 group-hover:opacity-100 rounded-lg"></div>
           </button>
 
-          {/* Social Proof Placeholder */}
-          <div className="flex flex-col items-center gap-3 text-center opacity-80">
-            <span className="text-sm text-zinc-400 font-sans tracking-tight">Tecnologia de ponta para escalar operações comerciais</span>
-            <div className="flex gap-4 opacity-50 grayscale hover:grayscale-0 transition-all duration-500">
-              {/* Placeholder boxes for logos */}
-              <div className="h-6 w-20 bg-white/10 rounded"></div>
-              <div className="h-6 w-20 bg-white/10 rounded"></div>
-              <div className="h-6 w-20 bg-white/10 rounded"></div>
-            </div>
+          <div className="flex flex-col items-center gap-1 text-center">
+            <span className="text-xs text-zinc-500 font-mono border-b border-zinc-800 pb-0.5">Análise gratuita de viabilidade para empresas com estoque acima de R$ 50k</span>
           </div>
         </section>
 
