@@ -6,60 +6,60 @@ function App() {
     <div className="min-h-screen bg-black text-white font-sans selection:bg-[#39FF14] selection:text-black overflow-x-hidden">
 
       {/* 1. Header & Headline */}
-      <header className="px-5 pt-10 pb-4 text-center max-w-5xl mx-auto">
-        <div className="bg-red-600/20 border border-red-500/50 text-red-500 text-center py-2 px-4 rounded-full font-bold text-xs md:text-sm inline-block mb-8 animate-pulse">
+      <header className="px-4 sm:px-6 pt-8 pb-4 text-center max-w-5xl mx-auto">
+        <div className="bg-red-600/20 border border-red-500/50 text-red-500 text-center py-2 px-3 rounded-full font-bold text-[11px] sm:text-xs md:text-sm inline-block mb-6 animate-pulse">
           🚀 Pare de Rasgar Dinheiro com Leads que Ninguém Atende
         </div>
-        <h1 className="text-3xl md:text-5xl font-black leading-tight tracking-tight mb-6">
+        <h1 className="text-2xl sm:text-3xl md:text-5xl font-black leading-tight tracking-tight mb-4 sm:mb-6">
           Nós Implementamos uma <span className="text-[#39FF14]">Máquina de Vendas com IA</span> no seu WhatsApp em 24h.
         </h1>
-        <p className="text-gray-300 text-lg md:text-xl font-medium leading-relaxed max-w-3xl mx-auto">
+        <p className="text-gray-300 text-base sm:text-lg md:text-xl font-medium leading-relaxed max-w-3xl mx-auto px-2">
           Atendimento <span className="text-white font-bold">humanizado</span>, qualificação automática e fechamento de vendas enquanto você dorme — <span className="underline decoration-[#39FF14] decoration-2 underline-offset-4">sem sua equipe tocar no celular</span>.
         </p>
       </header>
 
       {/* 2. Visual Element & Social Proof */}
-      <section className="px-5 pb-16 text-center">
-        <div className="group relative inline-block w-full max-w-md mx-auto mb-10">
+      <section className="px-4 sm:px-6 pb-12 sm:pb-16 text-center">
+        <div className="group relative inline-block w-full max-w-md mx-auto mb-8 sm:mb-10">
           <div className="absolute -inset-1 bg-[#39FF14] rounded-full blur opacity-30 group-hover:opacity-60 transition duration-500 animate-pulse"></div>
           <a href="https://wa.me/5514981400272?text=Oi!%20Vi%20o%20site%20e%20tenho%20interesse.%20Como%20podemos%20prosseguir%3F" target="_blank" rel="noopener noreferrer">
-            <button className="relative w-full bg-[#39FF14] hover:bg-[#32e010] text-black font-black text-lg md:text-xl py-5 px-6 rounded-full shadow-xl transition transform hover:scale-105 active:scale-95 flex items-center justify-center gap-3">
-              QUERO AGENDAR UMA DEMONSTRAÇÃO GRATUITA <Calendar className="w-6 h-6" />
+            <button className="relative w-full bg-[#39FF14] hover:bg-[#32e010] text-black font-black text-sm sm:text-base md:text-xl py-4 sm:py-5 px-4 sm:px-6 rounded-full shadow-xl transition transform hover:scale-105 active:scale-95 flex items-center justify-center gap-2 sm:gap-3">
+              <span className="leading-tight">QUERO AGENDAR UMA DEMONSTRAÇÃO GRATUITA</span> <Calendar className="w-5 h-5 sm:w-6 sm:h-6 shrink-0" />
             </button>
           </a>
-          <p className="text-gray-500 text-xs mt-3">
+          <p className="text-gray-500 text-[10px] sm:text-xs mt-3">
             Fale com um consultor e veja se o seu negócio é elegível.
           </p>
         </div>
 
         {/* Social Proof Strip */}
-        <div className="max-w-4xl mx-auto mb-12">
-          <div className="bg-gray-900/80 border border-white/10 rounded-xl p-4 md:p-6 flex flex-col md:flex-row items-center justify-center gap-6 md:gap-12 shadow-2xl backdrop-blur-sm">
-            <div className="flex items-center gap-3">
-              <div className="bg-[#39FF14]/10 p-2 rounded-lg">
-                <Users className="w-6 h-6 text-[#39FF14]" />
+        <div className="max-w-4xl mx-auto mb-10 sm:mb-12">
+          <div className="bg-gray-900/80 border border-white/10 rounded-xl p-3 sm:p-4 md:p-6 flex flex-row items-center justify-center gap-4 sm:gap-6 md:gap-12 shadow-2xl backdrop-blur-sm">
+            <div className="flex items-center gap-2 sm:gap-3">
+              <div className="bg-[#39FF14]/10 p-1.5 sm:p-2 rounded-lg">
+                <Users className="w-5 h-5 sm:w-6 sm:h-6 text-[#39FF14]" />
               </div>
               <div className="text-left">
-                <span className="block text-2xl font-bold text-white">+ 11</span>
-                <span className="text-xs text-gray-400 uppercase tracking-wider font-semibold">Empresas Automatizadas</span>
+                <span className="block text-xl sm:text-2xl font-bold text-white">+ 11</span>
+                <span className="text-[10px] sm:text-xs text-gray-400 uppercase tracking-wider font-semibold">Empresas</span>
               </div>
             </div>
 
-            <div className="hidden md:block w-px h-12 bg-white/10"></div>
+            <div className="w-px h-10 sm:h-12 bg-white/10"></div>
 
-            <div className="flex items-center gap-3">
-              <div className="bg-[#39FF14]/10 p-2 rounded-lg">
-                <Trophy className="w-6 h-6 text-[#39FF14]" />
+            <div className="flex items-center gap-2 sm:gap-3">
+              <div className="bg-[#39FF14]/10 p-1.5 sm:p-2 rounded-lg">
+                <Trophy className="w-5 h-5 sm:w-6 sm:h-6 text-[#39FF14]" />
               </div>
               <div className="text-left">
-                <span className="block text-2xl font-bold text-white">R$ 900k+</span>
-                <span className="text-xs text-gray-400 uppercase tracking-wider font-semibold">Gerados em Vendas</span>
+                <span className="block text-xl sm:text-2xl font-bold text-white">R$ 900k+</span>
+                <span className="text-[10px] sm:text-xs text-gray-400 uppercase tracking-wider font-semibold">em Vendas</span>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="max-w-3xl mx-auto relative group mt-8">
+        <div className="max-w-3xl mx-auto relative group mt-6 sm:mt-8">
           <div className="absolute -inset-1 bg-[#39FF14] rounded-2xl blur opacity-10 group-hover:opacity-20 transition duration-1000"></div>
           <div className="relative bg-gray-900 rounded-2xl border border-gray-800 overflow-hidden shadow-2xl">
             <img
@@ -72,13 +72,13 @@ function App() {
       </section>
 
       {/* 3. Agitação (O Gargalo) */}
-      <section className="px-5 py-20 bg-white/5 border-y border-white/5">
+      <section className="px-4 sm:px-6 py-12 sm:py-16 md:py-20 bg-white/5 border-y border-white/5">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-2xl md:text-4xl font-bold text-center mb-12 leading-tight">
+          <h2 className="text-xl sm:text-2xl md:text-4xl font-bold text-center mb-8 sm:mb-12 leading-tight">
             O gargalo do seu faturamento hoje <br /><span className="text-red-500">está no atendimento:</span>
           </h2>
 
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
             {[
               {
                 icon: AlertTriangle,
@@ -99,12 +99,12 @@ function App() {
                 color: "text-red-500"
               }
             ].map((item, index) => (
-              <div key={index} className="bg-black/40 p-6 rounded-2xl border border-white/5 hover:border-red-500/30 transition duration-300">
-                <div className="bg-red-500/10 p-3 rounded-lg w-fit mb-4">
-                  <item.icon className={`w-8 h-8 ${item.color}`} />
+              <div key={index} className="bg-black/40 p-5 sm:p-6 rounded-2xl border border-white/5 hover:border-red-500/30 transition duration-300">
+                <div className="bg-red-500/10 p-2.5 sm:p-3 rounded-lg w-fit mb-3 sm:mb-4">
+                  <item.icon className={`w-6 h-6 sm:w-8 sm:h-8 ${item.color}`} />
                 </div>
-                <h3 className="font-bold text-white text-xl mb-3">{item.title}</h3>
-                <p className="text-gray-400 leading-relaxed text-sm">{item.desc}</p>
+                <h3 className="font-bold text-white text-lg sm:text-xl mb-2 sm:mb-3">{item.title}</h3>
+                <p className="text-gray-400 leading-relaxed text-xs sm:text-sm">{item.desc}</p>
               </div>
             ))}
           </div>
@@ -112,16 +112,16 @@ function App() {
       </section>
 
       {/* 4. Solução (O Que Vamos Entregar) + Bonus */}
-      <section className="px-5 py-20">
+      <section className="px-4 sm:px-6 py-12 sm:py-16 md:py-20">
         <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-black mb-4">
+          <div className="text-center mb-10 sm:mb-16">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-black mb-4">
               O Que Vamos Entregar Para Você:
             </h2>
-            <div className="w-24 h-1 bg-[#39FF14] mx-auto rounded-full"></div>
+            <div className="w-20 sm:w-24 h-1 bg-[#39FF14] mx-auto rounded-full"></div>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
             {[
               {
                 icon: Smartphone,
@@ -144,27 +144,28 @@ function App() {
                 desc: "Veja em tempo real quanto a IA está vendendo."
               }
             ].map((item, index) => (
-              <div key={index} className="flex items-start gap-4 p-6 rounded-2xl bg-gray-900/30 border border-gray-800 hover:border-[#39FF14]/50 transition duration-300">
-                <div className="bg-[#39FF14]/10 p-3 rounded-xl shrink-0">
-                  <item.icon className="w-6 h-6 text-[#39FF14]" />
+              <div key={index} className="flex items-start gap-3 sm:gap-4 p-4 sm:p-6 rounded-2xl bg-gray-900/30 border border-gray-800 hover:border-[#39FF14]/50 transition duration-300">
+                <div className="bg-[#39FF14]/10 p-2.5 sm:p-3 rounded-xl shrink-0">
+                  <item.icon className="w-5 h-5 sm:w-6 sm:h-6 text-[#39FF14]" />
                 </div>
                 <div>
-                  <h3 className="font-bold text-white text-lg mb-2">{item.title}</h3>
-                  <p className="text-gray-400 text-sm leading-relaxed">{item.desc}</p>
+                  <h3 className="font-bold text-white text-base sm:text-lg mb-1 sm:mb-2">{item.title}</h3>
+                  <p className="text-gray-400 text-xs sm:text-sm leading-relaxed">{item.desc}</p>
                 </div>
               </div>
             ))}
             {/* Bonus Item */}
-            <div className="md:col-span-2 flex items-start gap-4 p-6 rounded-2xl bg-gradient-to-r from-[#39FF14]/10 to-transparent border border-[#39FF14]/30 hover:border-[#39FF14] transition duration-300">
-              <div className="bg-[#39FF14] p-3 rounded-xl shrink-0 text-black shadow-lg shadow-[#39FF14]/20 animate-pulse">
-                <Gift className="w-6 h-6" />
+            <div className="sm:col-span-2 flex items-start gap-3 sm:gap-4 p-4 sm:p-6 rounded-2xl bg-gradient-to-r from-[#39FF14]/10 to-transparent border border-[#39FF14]/30 hover:border-[#39FF14] transition duration-300">
+              <div className="bg-[#39FF14] p-2.5 sm:p-3 rounded-xl shrink-0 text-black shadow-lg shadow-[#39FF14]/20 animate-pulse">
+                <Gift className="w-5 h-5 sm:w-6 sm:h-6" />
               </div>
               <div>
-                <h3 className="font-black text-white text-lg mb-2 flex items-center gap-2">
-                  BÔNUS: Script de Recuperação de Vendas <span className="text-[#39FF14]">Exclusivo</span>
-                  <span className="bg-[#39FF14] text-black text-[10px] uppercase font-bold px-2 py-0.5 rounded-full ml-auto md:ml-2">OFERTA</span>
+                <h3 className="font-black text-white text-base sm:text-lg mb-1 sm:mb-2 flex flex-wrap items-center gap-2">
+                  <span>BÔNUS: Script de Recuperação</span>
+                  <span className="text-[#39FF14]">Exclusivo</span>
+                  <span className="bg-[#39FF14] text-black text-[9px] sm:text-[10px] uppercase font-bold px-2 py-0.5 rounded-full">OFERTA</span>
                 </h3>
-                <p className="text-gray-300 text-sm leading-relaxed">
+                <p className="text-gray-300 text-xs sm:text-sm leading-relaxed">
                   A IA detecta quem gerou Pix e não pagou, e faz a cobrança automática com alta conversão.
                 </p>
               </div>
@@ -174,39 +175,39 @@ function App() {
       </section>
 
       {/* 5. CTA Final (Escassez) & Quem Somos */}
-      <section className="px-5 pb-16 pt-10 bg-gradient-to-t from-[#39FF14]/5 to-transparent">
+      <section className="px-4 sm:px-6 pb-12 sm:pb-16 pt-8 sm:pt-10 bg-gradient-to-t from-[#39FF14]/5 to-transparent">
         <div className="max-w-3xl mx-auto text-center">
 
           {/* CTA Box */}
-          <div className="bg-gray-900 border border-gray-700 p-8 md:p-12 rounded-3xl shadow-2xl relative overflow-hidden mb-20">
+          <div className="bg-gray-900 border border-gray-700 p-5 sm:p-8 md:p-12 rounded-2xl sm:rounded-3xl shadow-2xl relative overflow-hidden mb-12 sm:mb-20">
             <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-[#39FF14] to-transparent"></div>
 
-            <div className="flex items-center justify-center gap-2 text-yellow-500 font-bold mb-6 bg-yellow-500/10 inline-block px-4 py-1 rounded-full text-sm">
-              <AlertTriangle className="w-4 h-4" /> Capacidade de Implementação Limitada
+            <div className="flex items-center justify-center gap-2 text-yellow-500 font-bold mb-4 sm:mb-6 bg-yellow-500/10 inline-block px-3 sm:px-4 py-1 rounded-full text-xs sm:text-sm">
+              <AlertTriangle className="w-3.5 h-3.5 sm:w-4 sm:h-4" /> Capacidade Limitada
             </div>
 
-            <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
-              Como nossa configuração é 100% personalizada, liberamos apenas <span className="text-[#39FF14] underline">4 vagas de consultoria</span> por semana.
+            <h2 className="text-lg sm:text-2xl md:text-3xl font-bold text-white mb-4 leading-tight px-2">
+              Como nossa configuração é 100% personalizada, liberamos apenas <span className="text-[#39FF14] underline">4 vagas</span> por semana.
             </h2>
 
-            <a href="https://wa.me/5514981400272?text=Oi!%20Vi%20o%20site%20e%20tenho%20interesse.%20Como%20podemos%20prosseguir%3F" target="_blank" rel="noopener noreferrer" className="group relative inline-block w-full max-w-md mt-8">
+            <a href="https://wa.me/5514981400272?text=Oi!%20Vi%20o%20site%20e%20tenho%20interesse.%20Como%20podemos%20prosseguir%3F" target="_blank" rel="noopener noreferrer" className="group relative inline-block w-full max-w-md mt-6 sm:mt-8">
               <div className="absolute -inset-1 bg-gradient-to-r from-[#39FF14] to-yellow-400 rounded-full blur opacity-50 group-hover:opacity-80 transition duration-500 animate-pulse"></div>
-              <button className="relative w-full bg-gradient-to-r from-[#39FF14] to-yellow-400 text-black font-black text-lg md:text-xl py-6 px-4 rounded-full shadow-xl transition transform hover:scale-[1.02] active:scale-[0.98] flex items-center justify-center gap-2">
+              <button className="relative w-full bg-gradient-to-r from-[#39FF14] to-yellow-400 text-black font-black text-base sm:text-lg md:text-xl py-4 sm:py-6 px-4 rounded-full shadow-xl transition transform hover:scale-[1.02] active:scale-[0.98] flex items-center justify-center gap-2">
                 QUERO APLICAR PARA UMA VAGA
-                <span className="text-black/80 text-2xl">➤</span>
+                <span className="text-black/80 text-xl sm:text-2xl">➤</span>
               </button>
               {/* Guarantee Line */}
-              <div className="flex items-center justify-center gap-2 mt-4 text-gray-400 text-xs md:text-sm font-medium">
-                <ShieldCheck className="w-4 h-4 text-[#39FF14]" />
+              <div className="flex items-center justify-center gap-2 mt-3 sm:mt-4 text-gray-400 text-[10px] sm:text-xs md:text-sm font-medium px-2">
+                <ShieldCheck className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#39FF14] shrink-0" />
                 <span>Garantia: Máquina rodando em 24h ou seu dinheiro de volta.</span>
               </div>
             </a>
           </div>
 
           {/* Quem Somos */}
-          <div className="max-w-2xl mx-auto border-t border-gray-800 pt-12">
-            <h3 className="text-xl font-bold text-white mb-4">Quem é a Vistra.ia?</h3>
-            <p className="text-gray-400 text-sm leading-relaxed">
+          <div className="max-w-2xl mx-auto border-t border-gray-800 pt-8 sm:pt-12 px-2">
+            <h3 className="text-lg sm:text-xl font-bold text-white mb-3 sm:mb-4">Quem é a Vistra.ia?</h3>
+            <p className="text-gray-400 text-xs sm:text-sm leading-relaxed">
               Especialistas em automação comercial que já geraram mais de <strong className="text-white">R$ 900 Mil</strong> para nossos clientes. Nós unimos tecnologia de ponta com estratégias de vendas validadas para transformar o atendimento do seu negócio.
             </p>
           </div>
@@ -214,7 +215,7 @@ function App() {
         </div>
       </section>
 
-      <footer className="py-8 text-center text-gray-800 text-xs border-t border-gray-900">
+      <footer className="py-6 sm:py-8 text-center text-gray-800 text-[10px] sm:text-xs border-t border-gray-900">
         <p>&copy; {new Date().getFullYear()} Vistra.ia. Todos os direitos reservados.</p>
       </footer>
 
