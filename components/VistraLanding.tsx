@@ -43,11 +43,11 @@ export const VistraLanding: React.FC = () => {
 
         {/* SECTION 1: HEADLINE */}
         <section className="space-y-6 text-left sm:text-center">
-            {/* Tagline/Hook */}
+          {/* Tagline/Hook */}
           <div className="inline-block rounded-full border border-vistra-neon/30 bg-vistra-neon/10 px-3 py-1 mb-4">
             <span className="text-xs font-bold tracking-widest text-vistra-neon uppercase">PROTOCOLO DE 3 SEGUNDOS</span>
           </div>
-          
+
           <h1 className="font-sans text-3xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight text-vistra-white mb-4">
             O Protocolo de 3 Segundos que Liquida Estoque Encalhado de <span className="text-vistra-neon">R$ 50k+</span> Sem Gastar com Anúncios.
           </h1>
@@ -62,21 +62,21 @@ export const VistraLanding: React.FC = () => {
 
         {/* SECTION 3: SOCIAL PROOF (UNIFIED CARDS) */}
         <section className="grid gap-6 sm:grid-cols-3">
-             {/* Card 1 */}
-            <div className="flex flex-col items-center justify-center p-6 rounded-xl border border-vistra-neon/20 bg-vistra-neon/5 backdrop-blur-sm text-center transform transition-all duration-300 hover:scale-105 hover:border-vistra-neon/50">
-                <span className="text-4xl font-bold text-white mb-2">R$ 12M+</span>
-                <span className="text-xs font-mono text-vistra-textGray uppercase tracking-widest">Recuperados (Histórico)</span>
-            </div>
-            {/* Card 2 */}
-            <div className="flex flex-col items-center justify-center p-6 rounded-xl border border-vistra-neon/20 bg-vistra-neon/5 backdrop-blur-sm text-center transform transition-all duration-300 hover:scale-105 hover:border-vistra-neon/50">
-                <span className="text-4xl font-bold text-white mb-2">3 Seg</span>
-                <span className="text-xs font-mono text-vistra-textGray uppercase tracking-widest">Tempo Médio de Resposta</span>
-            </div>
-             {/* Card 3 */}
-             <div className="flex flex-col items-center justify-center p-6 rounded-xl border border-vistra-neon/20 bg-vistra-neon/5 backdrop-blur-sm text-center transform transition-all duration-300 hover:scale-105 hover:border-vistra-neon/50">
-                <span className="text-4xl font-bold text-white mb-2">24/7</span>
-                <span className="text-xs font-mono text-vistra-textGray uppercase tracking-widest">Operação da IA</span>
-            </div>
+          {/* Card 1 */}
+          <div className="flex flex-col items-center justify-center p-6 rounded-xl border border-vistra-neon/20 bg-vistra-neon/5 backdrop-blur-sm text-center transform transition-all duration-300 hover:scale-105 hover:border-vistra-neon/50">
+            <span className="text-4xl font-bold text-white mb-2">R$ 12M+</span>
+            <span className="text-xs font-mono text-vistra-textGray uppercase tracking-widest">Recuperados (Histórico)</span>
+          </div>
+          {/* Card 2 */}
+          <div className="flex flex-col items-center justify-center p-6 rounded-xl border border-vistra-neon/20 bg-vistra-neon/5 backdrop-blur-sm text-center transform transition-all duration-300 hover:scale-105 hover:border-vistra-neon/50">
+            <span className="text-4xl font-bold text-white mb-2">3 Seg</span>
+            <span className="text-xs font-mono text-vistra-textGray uppercase tracking-widest">Tempo Médio de Resposta</span>
+          </div>
+          {/* Card 3 */}
+          <div className="flex flex-col items-center justify-center p-6 rounded-xl border border-vistra-neon/20 bg-vistra-neon/5 backdrop-blur-sm text-center transform transition-all duration-300 hover:scale-105 hover:border-vistra-neon/50">
+            <span className="text-4xl font-bold text-white mb-2">24/7</span>
+            <span className="text-xs font-mono text-vistra-textGray uppercase tracking-widest">Operação da IA</span>
+          </div>
         </section>
 
 
@@ -84,8 +84,8 @@ export const VistraLanding: React.FC = () => {
         <section className="grid gap-6 sm:grid-cols-2 pt-8">
 
           {/* CARD: MANUAL (DOR/PAIN) - Black & White / Red Tint */}
-          <div className="flex flex-col gap-6 rounded-2xl border border-white/10 bg-zinc-950 p-6 sm:p-8 relative overflow-hidden grayscale hover:grayscale-0 hover:border-red-500/50 transition-all duration-500 group">
-             {/* Glitch overlay maybe? Keeping it simple but dark */}
+          <div className="flex flex-col gap-6 rounded-2xl border border-white/10 bg-zinc-950 p-6 sm:p-8 relative overflow-hidden grayscale-0 sm:grayscale sm:hover:grayscale-0 hover:border-red-500/50 transition-all duration-500 group">
+            {/* Glitch overlay maybe? Keeping it simple but dark */}
             <div className="absolute inset-0 bg-red-900/5 pointer-events-none group-hover:bg-red-900/10 transition-colors"></div>
 
             <div className="flex items-center gap-3 border-b border-white/10 pb-4 z-10">
@@ -132,12 +132,12 @@ export const VistraLanding: React.FC = () => {
 
         {/* SECTION 5: CTA */}
         <section className="flex flex-col items-center gap-8 pt-8 pb-12">
-          
-           {/* Credibility / Authority text moved here slightly modified if needed, or keep standard */}
-           <div className="text-center space-y-2">
-                <h2 className="text-2xl font-bold text-white">Pare de perder dinheiro com estoque parado.</h2>
-                <p className="text-zinc-400">Sua agenda lotada de clientes qualificados, sem esforço manual.</p>
-           </div>
+
+          {/* Credibility / Authority text moved here slightly modified if needed, or keep standard */}
+          <div className="text-center space-y-2">
+            <h2 className="text-2xl font-bold text-white">Pare de perder dinheiro com estoque parado.</h2>
+            <p className="text-zinc-400">Sua agenda lotada de clientes qualificados, sem esforço manual.</p>
+          </div>
 
           <button
             onClick={handleCtaClick}
